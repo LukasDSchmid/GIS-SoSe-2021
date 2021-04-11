@@ -1,0 +1,160 @@
+/* Background */
+
+body{
+    background-image: url(images/bg.png);
+    font-family: sans-serif;
+    width: 800px;
+}
+
+/* navigation */
+
+.navigation{
+
+    height: 50px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    float: right;
+    margin: 0;
+    background-color: black;
+    border-radius: 15px;
+    position: relative;
+    font-family: sans-serif
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+    padding: 15px;
+}
+
+nav a{
+    display: inline-block;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background: ghostwhite;
+    color: black;
+    border-radius: 15px; 
+}
+
+/* Subnav*/
+
+
+.subnav:hover{
+    color: white;
+    background-color: plum;
+}
+
+.subnav:active{
+    background-color: plum;
+    transform: translate();
+}
+
+
+
+#home #navi1,
+#steckbrief #navi2,
+#kontakte #navi3{
+    color: ghostwhite;
+    background-color:plum;
+    border-radius: 15px;
+}
+
+/* formula */
+
+form{
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+form input{
+    padding: .5em;
+    background: lightgrey;
+    border-radius: 15px;
+    
+}
+
+form textarea{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+}
+
+button{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+    color: whitesmoke;
+
+}
+
+::placeholder {
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+#datens{
+    color: gray;
+    font-size: 0.5em;
+}
+
+/*Footer*/
+
+footer{
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: plum;
+    border-radius: 5px;
+}
+
+/*Picture*/
+
+.col{
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+/*Header*/
+
+.Kopf{
+    padding: 15px;
+    text-align: center;
+    background:padding-box;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.FB{
+    padding: 15px;
+    text-align: center;
+    background:padding-box;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+
+}
+
+

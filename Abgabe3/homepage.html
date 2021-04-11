@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <title>Meine Homepage</title>
         <meta charset="UTF-8">
         <meta name="author" content="Lukas Schmid">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="style" href="style.css">
+        <link rel="stylesheet" href="style.css">
         
     </head>
 
-    <body>
+    <body id="home">
         <header>
         </header>
+    
+    <div class="navigation">    
 
         <nav>
             <ul>
-                <li><a href="homepage.html">Homepage</a></li>
-                <li><a href="Steckbrief.html">Steckbrief</a></li>
-                <li><a href="kontakte.html">Contact Me!</a></li>
+                <li><a href="homepage.html" id="navi1">Homepage</a></li>
+                <li><a href="Steckbrief.html" id="navi2">Steckbrief</a></li>
+                <li><a href="kontakte.html" id="navi3">Contact Me</a></li>
             </ul>
         </nav>
-       
+    </div>
+    
+        
 
         <main>
-            <h1 id="Anfang">Willkommen zu meiner Website</h1> 
+            <div class="Kopf">
+                <h1 id="Anfang">Willkommen zu meiner Website</h1> 
+            </div>
+            <a href="https://www.instagram.com/aschenbrennerlokras/?hl=de"><button class="subnav">Instagram </button></a>
+
             <p>Willst du wissen wer ich bin?</p>  
             <p>Hier gehts zu meinem Steckbrief: <a href="Steckbrief.html" >MeinSteckbrief</a></p>
             <br>
-            <h2>Just wanna chill out?</h2>
+            <h1>Just wanna chill out?</h1>
             <p>Click this!</p>
             <img src="images/giphy.gif" alt="chill">
             <audio src="audios/NewSoul.mp3" controls autoplay></audio>
@@ -43,31 +52,25 @@
 
             <br>
 
-            <h3>Hier ein paar meiner Lieblingsserien:</h3>
+            <h1>Hier ein paar meiner Lieblingsserien:</h1>
 
-            <table>
-                <thead>
-                    <tr>
-                      <th><img src="images/AOT.jpeg" alt="titan"></th>
-                      <th><img src="images/OnePiece.jpg" alt="OP"></th>
-                      <th><img src="images/DragonBall.jpg" alt="DB"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                      <td><img src="images/CaroleTue.jpg" alt="CT"></td>
-                      <td><img src="images/Steins.jpg" alt="SG"></td>
-                      <td><img src="images/FullMetal.jpg" alt="FMA"></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                      <td><img src="images/DrStone.jpg" alt="DrS"></td>
-                      <td><img src="images/DNote.jpg" alt="DN"></td>
-                      <td><img src="images/TokyoG.jpeg" alt=">Tg"></td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="con1">   
+            <div class="col"><img src="images/DrStone.jpg" alt="titan"></div>
+            <div class="col"><img src="images/OnePiece.jpg" alt="OP"></div>
+            <div class="col"><img src="images/FullMetal.jpg" alt="DB"></div>
+        </div>     
+
+        <div class="con2"> 
+            <div class="col"><img src="images/CaroleTue.jpg" alt="CT"></div>
+            <div class="col"><img src="images/Steins.jpg" alt="SG"></div>
+            <div class="col"><img src="images/DragonBall.jpg" alt="FMA"></div>
+        </div>
+
+        <div class="con3">
+            <div class="col"><img src="images/AOT.jpeg" alt="DrS"></div>
+            <div class="col"><img src="images/DNote.jpg" alt="DN"></div>
+            <div class="col"><img src="images/TokyoG.jpeg" alt=">Tg"></div>
+        </div>
 
             
             <p>Danke, dass du dir meine Website angeschaut hast :D</p>
@@ -76,7 +79,7 @@
         </main>
 
         <footer>
-            
+            <p>copyright © 2021, Lukas Schmid | Germany | Legal Notification | </p>
         </footer>
     </body>
 </html>
