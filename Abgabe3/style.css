@@ -4,7 +4,9 @@ body{
     background-image: url(images/bg.png);
     font-family: sans-serif;
     width: 800px;
+    text-align:center;
 }
+
 
 /* navigation */
 
@@ -54,15 +56,7 @@ nav a:hover{
 /* Subnav*/
 
 
-.subnav:hover{
-    color: white;
-    background-color: plum;
-}
 
-.subnav:active{
-    background-color: plum;
-    transform: translate();
-}
 
 
 
@@ -157,4 +151,17 @@ footer{
 
 }
 
+.infos{
+    text-align: center;
+}
+
+.fab:hover{
+    color: white;
+    background-color: plum;
+}
+
+.fab:active{
+    background-color: plum;
+    transform: translate();
+}
 
