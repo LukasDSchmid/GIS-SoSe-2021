@@ -5,6 +5,7 @@ body{
     font-family: sans-serif;
     width: 800px;
     text-align:center;
+    margin: auto;
 }
 
 
@@ -126,6 +127,7 @@ footer{
     box-sizing: border-box;
     padding: 0.5em;
     vertical-align: top;
+    width: 800px;
 }
 
 /*Header*/
@@ -165,3 +167,12 @@ footer{
     transform: translate();
 }
 
+.video video{
+
+    width: 700px;
+
+}
+
+.profil image{
+    width: 700px;
+}
