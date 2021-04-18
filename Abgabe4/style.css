@@ -1,0 +1,227 @@
+/* Background */
+
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+body{
+    background-image: url(images/bg.png);
+    font-family: sans-serif;
+    width: 800px;
+}
+
+
+/* navigation */
+
+.navigation{
+
+    height: 50px;
+    position:sticky;
+    top: 0;
+}
+
+nav{
+    float: right;
+    margin: 0;
+    background-color: black;
+    border-radius: 10px;
+    font-family: sans-serif
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+    padding: 15px;
+}
+
+nav a{
+    display: inline-block;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background: ghostwhite;
+    color: black;
+    border-radius: 15px; 
+}
+
+
+#home #navi1,
+#steckbrief #navi2,
+#kontakte #navi3{
+    color: ghostwhite;
+    background-color:plum;
+    border-radius: 15px;
+}
+
+/* formula */
+
+form{
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+form input{
+    padding: .5em;
+    background: lightgrey;
+    border-radius: 15px;
+    
+}
+
+form textarea{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+}
+
+button{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+    color: whitesmoke;
+
+}
+
+::placeholder {
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+#datens{
+    color: gray;
+    font-size: 0.5em;
+}
+
+/*Footer*/
+
+footer{
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: plum;
+    border-radius: 5px;
+}
+
+
+/*Header*/
+
+#Kopf{
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    display: flex 10px;
+    flex-direction: column;
+
+}
+
+.FB{
+    padding: 15px;
+    text-align: center;
+    background:padding-box;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+
+}
+
+
+.fab:hover{
+    color: white;
+    background-color: plum;
+}
+
+.fab:active{
+    background-color: plum;
+    transform: translate();
+}
+
+.video video{
+
+    width: 700px;
+
+}
+
+
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    transition: 1s ease-in-out 0s;
+}
+h2:hover{
+    color: plum;
+}
+
+div > h2{
+    color: blueviolet;
+}
