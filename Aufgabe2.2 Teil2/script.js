@@ -2,13 +2,13 @@
 /*--------
 Aufgabe 3
 ---------*/
-let canvas = document.getElementById("myFirstCanvas");
+let canvas = document.getElementById("myCanvas");
 let context = canvas.getContext("2d");
 // sky
 context.fillStyle = "blue";
 context.fillRect(0, 0, 800, 600);
 // ground
-context.fillStyle = "green";
+context.fillStyle = "darkgreen";
 context.fillRect(0, 300, 800, 200);
 // cloud
 context.beginPath();
@@ -19,7 +19,7 @@ context.bezierCurveTo(420, 150, 420, 120, 390, 100);
 context.bezierCurveTo(430, 40, 370, 30, 340, 50);
 context.bezierCurveTo(320, 5, 250, 20, 250, 50);
 context.bezierCurveTo(200, 5, 150, 20, 170, 80);
-context.fillStyle = "#8ED6FF";
+context.fillStyle = "ghostwhite";
 context.fill();
 context.closePath();
 // tree
@@ -69,8 +69,8 @@ class VierEck {
         context.closePath();
     }
 }
-let rechtArray = [new VierEck(), new VierEck(), new VierEck()];
-for (const recht of rechtArray) {
+let fourArray = [new VierEck(), new VierEck(), new VierEck()];
+for (const recht of fourArray) {
     recht.drawRect();
 }
 //# sourceMappingURL=script.js.map

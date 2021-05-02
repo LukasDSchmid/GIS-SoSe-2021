@@ -10,7 +10,7 @@ namespace Aufgabe2_2{
     
         let minimum: number = nummer[0];
     
-        for(let i: number = 0; i = nummer.length; i++){
+        for(let i: number = 0; i <= nummer.length; i++){
     
             const safeNumber: number = nummer[i];
     
