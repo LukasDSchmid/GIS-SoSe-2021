@@ -6,14 +6,14 @@ namespace Aufgabe2_3{
 
     // Himmel
     let sky: HTMLParagraphElement = document.createElement("div");
-    sky.style.backgroundColor = "lightblue";
+    sky.style.backgroundColor = "blue";
     sky.style.width = "100%";
     sky.style.height = "100%";
     drawDiv.appendChild(sky);
 
     // Wiese
     let grass: HTMLParagraphElement = document.createElement("div");
-    grass.style.backgroundColor = "green";
+    grass.style.backgroundColor = "darkgreen";
     grass.style.width = "100%";
     grass.style.height = "200px";
     grass.style.position = "absolute";
@@ -28,7 +28,7 @@ namespace Aufgabe2_3{
     roof.style.right = "50px";
     drawDiv.appendChild(roof);
     let house: HTMLParagraphElement = document.createElement("div");
-    house.style.backgroundColor = "beige";
+    house.style.backgroundColor = "white";
     house.style.width = "200px";
     house.style.height = "200px";
     house.style.position = "absolute";
@@ -46,7 +46,7 @@ namespace Aufgabe2_3{
     treeBottom.style.left = "175px";
     drawDiv.appendChild(treeBottom);
     let treeTop: HTMLParagraphElement = document.createElement("div");
-    treeTop.style.backgroundColor = "darkgreen";
+    treeTop.style.backgroundColor = "green";
     treeTop.style.width = "200px";
     treeTop.style.height = "200px";
     treeTop.style.position = "absolute";
@@ -81,7 +81,7 @@ namespace Aufgabe2_3{
         console.log("New Rect");
         let rect: HTMLParagraphElement = document.createElement("div");
         rect.style.position = "absolute";
-        rect.style.backgroundColor = "purple";
+        rect.style.backgroundColor = "plum";
         rect.style.border = "solid";
         let width: number = getRandomInt(10, 300);
         let height: number = getRandomInt(10, 200);
