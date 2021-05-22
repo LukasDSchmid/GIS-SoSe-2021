@@ -1,0 +1,78 @@
+{
+    "top":[
+    {
+        "name":"statue1 - Top",
+        "type":0,
+        "link":"images/top/statue1_top.png"
+    },
+
+    {
+        "name":"statue2 - Top",
+        "type":0,
+        "link":"images/top/statue2_top.png"
+    },
+
+    {
+        "name":"statue3 - Top",
+        "type":0,
+        "link":"images/top/statue3_top.png"
+    },
+
+    {
+        "name":"statue4 - Top",
+        "type":0,
+        "link":"images/top/statue4_top.png"
+    }],
+
+    
+    "middle":[
+    {
+        "name":"statue1 - Middle",
+        "type":1,
+        "link":"images/middle/statue1_middle.png"
+    },
+
+    {
+        "name":"statue2 - Middle",
+        "type":1,
+        "link":"images/middle/statue2_middle.png"
+    },
+
+    {
+        "name":"statue3 - Middle",
+        "type":1,
+        "link":"images/middle/statue3_middle.png"
+    },
+
+    {
+        "name":"statue4 - Middle",
+        "type":1,
+        "link":"images/middle/statue4_middle.png"
+    }],
+    
+
+    "bottom":[
+    {
+        "name":"statue1 - Bottom",
+        "type":2,
+        "link":"images/bottom/statue1_bottom.png"
+    },
+
+    {
+        "name":"statue2 - Bottom",
+        "type":2,
+        "link":"images/bottom/statue2_bottom.png"
+    },
+
+    {
+        "name":"statue3 - Bottom",
+        "type":2,
+        "link":"images/bottom/statue3_bottom.png"
+    },
+
+    {
+        "name":"statue4 - Bottom",
+        "type":2,
+        "link":"images/bottom/statue4_bottom.png"
+    }]
+}
