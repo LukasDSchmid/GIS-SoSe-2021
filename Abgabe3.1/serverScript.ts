@@ -2,7 +2,7 @@ namespace P_3_1Server {
 
     
 
-    let sendButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("send");
+    let sendButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendButtonS");
     sendButton.addEventListener("click", send);
 
     async function send (): Promise<void>{
