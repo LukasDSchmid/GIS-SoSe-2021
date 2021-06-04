@@ -1,26 +1,26 @@
 import * as Http from "http";
 
 export namespace P_3_1Server {
-    console.log("Starting server");
+    console.log("Starting server");                     //Konsolenausgabe "Starting Server"
     let port: number = Number(process.env.PORT);        //Variable anlegen, um sich mit dem Server zu verbinden
-    if (!port)
-        port = 8100;                                    //Port den Wert 8100 zuweisen
+    if (!port)                                          //Wen kein Port deklariert wird....
+        port = 8100;                                    //...wird dem Port den Wert 8100 zugewiesen
 
-    let server: Http.Server = Http.createServer();      //Serverr erstellen + Eventlistener
-    server.addListener("request", handleRequest);
-    server.addListener("listening", handleListen);
-    server.listen(port);
+    let server: Http.Server = Http.createServer();      //Server wird erstellt
+    server.addListener("request", handleRequest);       //Ein Listener wird dem Server hinzugefügt, welcher die Funktion handleRequest ausführt
+    server.addListener("listening", handleListen);      //Ein Listener wird dem Server hinzugefügt, welcher die Funktion handleListen ausführt
+    server.listen(port);                                //Der Server reagiert auf den angegebenen Port
 
     function handleListen(): void {                     // Gibt "Listening" zurück
-        console.log("Listening");
+        console.log("Listening");                       //Konsolenausgabe "Listening"
     }
 
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {   //Gewährt Zugriff
-        console.log("I hear voices!");
-        _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        console.log("I hear voices!");                                                               //Konsolenausgabe "I hear a voice"
+        _response.setHeader("content-type", "text/html; charset=utf-8");                             //Die Eigenschaften des Headers werden deaklariert
+        _response.setHeader("Access-Control-Allow-Origin", "*");                                     //Zugriffserlaubnis wird festgelegt/überprüft
         _response.write(_request.url);                                                               //Gibt URL zurück
-        _response.end();
+        _response.end();                                                                             //Der Response des Servers wird beendet
     }
 }

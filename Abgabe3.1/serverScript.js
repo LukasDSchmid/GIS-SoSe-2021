@@ -19,6 +19,7 @@ var P_3_1Server;
         console.log("Answer:");
         let answerText = document.getElementById("answer");
         answerText.innerText = text;
+        console.log(answerText);
     }
 })(P_3_1Server || (P_3_1Server = {}));
 //# sourceMappingURL=serverScript.js.map

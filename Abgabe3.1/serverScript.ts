@@ -1,7 +1,6 @@
 namespace P_3_1Server {
 
     
-
     let sendButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendButton");
     sendButton.addEventListener("click", send);
 
@@ -22,6 +21,7 @@ namespace P_3_1Server {
         console.log("Answer:");
         let answerText: HTMLParagraphElement = <HTMLDivElement>document.getElementById("answer");
         answerText.innerText = text;
+        console.log(answerText);
     }
         
     
