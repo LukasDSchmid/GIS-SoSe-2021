@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="serverScript.js" defer></script>
+    <title>Aufgabe3.1</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h1>Contact me:</h1>
+        <form action="https://lukasschmidapp.herokuapp.com" method="port">
+            <p><label>Name:</label>
+            <input type="text" name="name" placeholder="name"></p>
+            <p><label>E-Mail:</label>
+            <input type="email" name="email" required placeholder="email"></p>
+            <p><label>Message:</label>
+            <textarea rows="7" name="message" placeholder="message"></textarea></p>
+            
+            <p><button id="sendButton" type="button">Press send</button></p>
+            <p><button id="sendJSON" type="button">Send to Json</button></p>
+        </form>        
+            <h1>Answer:</h1>
+            <p id="answer"></p>
+        
+    </main>
+
+    <footer>
+    </footer>
+    
+</body>
+</html>

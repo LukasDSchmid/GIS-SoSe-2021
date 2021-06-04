@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
 
-    "start": "node Abgabe3.1/bspServer.js"
+    "start": "node Abgabe3.2/bspServer.js"
     
   },
   "repository": {

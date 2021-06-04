@@ -1,7 +1,10 @@
-namespace P_3_1Server {
+export namespace P_3_2Server {
 
-    
+    let urlServer: string = "http://localhost:8100";
     document.getElementsByTagName("button")[0].addEventListener("click", send);
+    let btSendJSON: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendJSON");
+    btSendJSON.addEventListener("click", send);
+    
 
     async function send (): Promise<void>{
         let formData: FormData = new FormData(document.forms[0]);       //FormData Objekt wird deklariert & wird auf Formelement verwiesen
@@ -17,10 +20,11 @@ namespace P_3_1Server {
         url = url + "?" + query.toString();                                                         //URL wird um Query String erweitert          
         let response: Response = await fetch(url);                                                  //Daten werden asynchron gesendet     
         let text: string = await response.text()
-        console.log("Answer:");
+        console.log("Answer: " + response);
         let answerText: HTMLParagraphElement = <HTMLDivElement>document.getElementById("answer");   //Gibt die Antwort auf der Seite aus
         answerText.innerText = text;
-        console.log(answerText);
+        let answerJson: JSON = await response.json();
+        console.log(answerJson);
     }
         
     

@@ -1,7 +1,12 @@
 "use strict";
-var P_3_1Server;
-(function (P_3_1Server) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.P_3_2Server = void 0;
+var P_3_2Server;
+(function (P_3_2Server) {
+    let urlServer = "http://localhost:8100";
     document.getElementsByTagName("button")[0].addEventListener("click", send);
+    let btSendJSON = document.getElementById("sendJSON");
+    btSendJSON.addEventListener("click", send);
     async function send() {
         let formData = new FormData(document.forms[0]); //FormData Objekt wird deklariert & wird auf Formelement verwiesen
         console.log(formData.get("name")); //Holt sich die Zeichenkette mit dem Attribut "name"
@@ -15,10 +20,11 @@ var P_3_1Server;
         url = url + "?" + query.toString(); //URL wird um Query String erweitert          
         let response = await fetch(url); //Daten werden asynchron gesendet     
         let text = await response.text();
-        console.log("Answer:");
+        console.log("Answer: " + response);
         let answerText = document.getElementById("answer"); //Gibt die Antwort auf der Seite aus
         answerText.innerText = text;
-        console.log(answerText);
+        let answerJson = await response.json();
+        console.log(answerJson);
     }
-})(P_3_1Server || (P_3_1Server = {}));
+})(P_3_2Server = exports.P_3_2Server || (exports.P_3_2Server = {}));
 //# sourceMappingURL=serverScript.js.map
