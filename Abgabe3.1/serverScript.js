@@ -10,7 +10,7 @@ var P_3_1Server;
             console.log("name: " + entry[0]);
             console.log("value: " + entry[1]);
         }
-        let url = "https://testgislukas.herokuapp.com/";
+        let url = "https://lukasschmidapp.herokuapp.com";
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         let response = await fetch(url);

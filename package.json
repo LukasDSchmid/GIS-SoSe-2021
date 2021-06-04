@@ -5,11 +5,12 @@
   "name": "lukasschmidapp",
   "description": "Readme Test\r hello",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "serverScript.js",
   "devDependencies": {},
   "scripts": {
 
-    "start": "node./Abgabe3.1/serverScript.js"
+    "start": "node Abgabe3.1/serverScript.js"
+    
   },
   "repository": {
     "type": "git",

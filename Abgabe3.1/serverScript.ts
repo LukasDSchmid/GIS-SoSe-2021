@@ -12,7 +12,7 @@ namespace P_3_1Server {
             console.log("value: " + entry[1]);
         }
 
-        let url: string = "https://testgislukas.herokuapp.com/";
+        let url: string = "https://lukasschmidapp.herokuapp.com";
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
         let response: Response = await fetch(url);
