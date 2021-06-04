@@ -1,8 +1,7 @@
 "use strict";
 var P_3_1Server;
 (function (P_3_1Server) {
-    let sendButton = document.getElementById("sendButton");
-    sendButton.addEventListener("click", send);
+    document.getElementsByTagName("button")[0].addEventListener("click", send);
     async function send() {
         let formData = new FormData(document.forms[0]);
         console.log(formData.get("name"));

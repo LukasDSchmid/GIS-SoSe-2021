@@ -2,14 +2,14 @@
   "dependencies": {
     "@types/node": "^15.6.1"
   },
-  "name": "testgislukas",
+  "name": "lukasschmidapp",
   "description": "Readme Test\r hello",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
 
-    "start": "node ./Abgabe3.1/serverScript.js"
+    "start": "node./Abgabe3.1/serverScript.js"
   },
   "repository": {
     "type": "git",

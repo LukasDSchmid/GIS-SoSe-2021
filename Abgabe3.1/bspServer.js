@@ -6,8 +6,8 @@ var P_3_1Server;
 (function (P_3_1Server) {
     console.log("Starting server"); //Konsolenausgabe "Starting Server"
     let port = Number(process.env.PORT); //Variable anlegen, um sich mit dem Server zu verbinden
-    if (!port)
-        port = 8100; //Port den Wert 8100 zuweisen
+    if (!port) //Wen kein Port deklariert wird....
+        port = 8100; //...wird dem Port den Wert 8100 zugewiesen
     let server = Http.createServer(); //Server wird erstellt
     server.addListener("request", handleRequest); //Ein Listener wird dem Server hinzugefügt, welcher die Funktion handleRequest ausführt
     server.addListener("listening", handleListen); //Ein Listener wird dem Server hinzugefügt, welcher die Funktion handleListen ausführt

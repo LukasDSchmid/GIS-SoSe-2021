@@ -1,8 +1,7 @@
 namespace P_3_1Server {
 
     
-    let sendButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendButton");
-    sendButton.addEventListener("click", send);
+    document.getElementsByTagName("button")[0].addEventListener("click", send);
 
     async function send (): Promise<void>{
         let formData: FormData = new FormData(document.forms[0]);
