@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.P_3_2Server = void 0;
 var P_3_2Server;
 (function (P_3_2Server) {
-    let urlServer = "http://localhost:8100";
+    let urlServer = "https://lukasschmidapp.herokuapp.com";
     document.getElementsByTagName("button")[0].addEventListener("click", send);
     let btSendJSON = document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", send);
@@ -15,7 +15,7 @@ var P_3_2Server;
             console.log("name: " + entry[0]); //Gibt "name" den ersten Eintrag aus                
             console.log("value: " + entry[1]); //Gibt "value" den zweiten Eintrag aus (also das, was im Formular eingegeben wurde)      
         }
-        let url = "https://lukasschmidapp.herokuapp.com"; //Verweist auf die HerokuApp
+        let url = urlServer + "/json"; //Verweist auf die HerokuApp
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString(); //URL wird um Query String erweitert          
         let response = await fetch(url); //Daten werden asynchron gesendet     

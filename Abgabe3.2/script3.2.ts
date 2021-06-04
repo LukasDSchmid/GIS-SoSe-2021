@@ -1,6 +1,6 @@
 export namespace P_3_2Server {
 
-    let urlServer: string = "http://localhost:8100";
+    let urlServer: string = "https://lukasschmidapp.herokuapp.com";
     document.getElementsByTagName("button")[0].addEventListener("click", send);
     let btSendJSON: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", send);
@@ -15,7 +15,7 @@ export namespace P_3_2Server {
             console.log("value: " + entry[1]);                          //Gibt "value" den zweiten Eintrag aus (also das, was im Formular eingegeben wurde)      
         }
 
-        let url: string = "https://lukasschmidapp.herokuapp.com";                                   //Verweist auf die HerokuApp
+        let url: string = urlServer + "/json";                                  //Verweist auf die HerokuApp
         let query: URLSearchParams = new URLSearchParams(<any>formData);                                 
         url = url + "?" + query.toString();                                                         //URL wird um Query String erweitert          
         let response: Response = await fetch(url);                                                  //Daten werden asynchron gesendet     
