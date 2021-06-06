@@ -1,9 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.P_3_2Server = void 0;
 var P_3_2Server;
 (function (P_3_2Server) {
     let urlServer = "https://lukasschmidapp.herokuapp.com";
+    //let urlServer: string = "http://localhost:8100"
     document.getElementsByTagName("button")[0].addEventListener("click", send);
     let btSendJSON = document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", send);
@@ -26,5 +25,5 @@ var P_3_2Server;
         let answerJson = await response.json();
         console.log(answerJson);
     }
-})(P_3_2Server = exports.P_3_2Server || (exports.P_3_2Server = {}));
+})(P_3_2Server || (P_3_2Server = {}));
 //# sourceMappingURL=script3.2.js.map

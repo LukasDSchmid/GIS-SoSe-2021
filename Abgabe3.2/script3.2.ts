@@ -1,6 +1,7 @@
-export namespace P_3_2Server {
+namespace P_3_2Server {
 
     let urlServer: string = "https://lukasschmidapp.herokuapp.com";
+    //let urlServer: string = "http://localhost:8100"
     document.getElementsByTagName("button")[0].addEventListener("click", send);
     let btSendJSON: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendJSON");
     btSendJSON.addEventListener("click", send);
