@@ -6,7 +6,7 @@ namespace P_3_2Server {
     btSendJSON.addEventListener("click", sendtoJson);
     let buttonHTML: HTMLButtonElement = <HTMLButtonElement>document.getElementById("sendButton");
     buttonHTML.addEventListener("click", sendtoHTML);
-    let formData: FormData = new FormData(document.forms[0]);
+    //let formData: FormData = new FormData(document.forms[0]);
     
 
     async function sendtoJson (): Promise<void>{
@@ -38,7 +38,7 @@ namespace P_3_2Server {
         let response: Response = await fetch(url);    
         let answerText: HTMLParagraphElement = <HTMLDivElement>document.getElementById("answer");                                              //Daten werden asynchron gesendet     
         let text: string = await response.text()
-        answerText.innerText = text;
+        answerText.innerHTML = text;
     }
         
     
