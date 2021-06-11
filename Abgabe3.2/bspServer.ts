@@ -1,6 +1,6 @@
 import * as Http from "http";
 import * as Url from "url";
-import { type } from "os";
+
 
 export namespace P_3_2Server {
     console.log("Starting server");                     //Konsolenausgabe "Starting Server"
@@ -24,12 +24,13 @@ export namespace P_3_2Server {
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {   //Gewährt Zugriff
         console.log("I hear voices!");                                                               //Konsolenausgabe "I hear a voice"
-        _response.setHeader("content-type", "text/html; charset=utf-8");                             //Die Eigenschaften des Headers werden deaklariert
+        //_response.setHeader("content-type", "text/html; charset=utf-8");                             //Die Eigenschaften des Headers werden deaklariert
         _response.setHeader("Access-Control-Allow-Origin", "*");                                     //Zugriffserlaubnis wird festgelegt/überprüft
         let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
         let query: Query = url.query;                                                                           //Der Response des Servers wird beendet
         
         if (url.pathname == "/html") {
+            _response.setHeader("content-type", "text/html; charset=utf-8");
             for (let key in query) {
                 let value: string | string [] = query[key];
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>");
@@ -37,6 +38,7 @@ export namespace P_3_2Server {
         }
         
         if (url.pathname == "/json") {
+            _response.setHeader("content-type", "application/json");
             _response.write(JSON.stringify(query));
         }
         _response.end(); //Response wird beendet

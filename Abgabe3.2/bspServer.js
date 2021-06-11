@@ -18,17 +18,19 @@ var P_3_2Server;
     }
     function handleRequest(_request, _response) {
         console.log("I hear voices!"); //Konsolenausgabe "I hear a voice"
-        _response.setHeader("content-type", "text/html; charset=utf-8"); //Die Eigenschaften des Headers werden deaklariert
+        //_response.setHeader("content-type", "text/html; charset=utf-8");                             //Die Eigenschaften des Headers werden deaklariert
         _response.setHeader("Access-Control-Allow-Origin", "*"); //Zugriffserlaubnis wird festgelegt/überprüft
         let url = Url.parse(_request.url, true);
         let query = url.query; //Der Response des Servers wird beendet
         if (url.pathname == "/html") {
+            _response.setHeader("content-type", "text/html; charset=utf-8");
             for (let key in query) {
                 let value = query[key];
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>");
             }
         }
         if (url.pathname == "/json") {
+            _response.setHeader("content-type", "application/json");
             _response.write(JSON.stringify(query));
         }
         _response.end(); //Response wird beendet
