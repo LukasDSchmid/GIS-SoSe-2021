@@ -26,8 +26,8 @@ namespace P_3_2Server {
         console.log("Answer: " + response);
         let answerText: HTMLParagraphElement = <HTMLDivElement>document.getElementById("answer");   //Gibt die Antwort auf der Seite aus
         answerText.innerText = text;
-        let answerJson: JSON = await response.json();
-        console.log(answerJson);
+        //let answerJson: JSON = await response.json();
+        console.log(JSON.parse(text));
     }
 
     async function sendtoHTML (): Promise <void> {

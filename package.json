@@ -1,16 +1,15 @@
 {
   "dependencies": {
-    "@types/node": "^15.6.1"
+    "@types/mongodb": "^3.6.18",
+    "@types/node": "^15.6.1",
+    "mongodb": "^3.6.9"
   },
   "name": "lukasschmidapp",
   "description": "Readme Test\r hello",
   "version": "1.0.0",
-  "main": "serverScript.js",
-  "devDependencies": {},
+  "main": "script3.4.js",
   "scripts": {
-
-    "start": "node Abgabe3.2/bspServer.js"
-    
+    "start": "node Abgabe3.4/bspServer.js"
   },
   "repository": {
     "type": "git",

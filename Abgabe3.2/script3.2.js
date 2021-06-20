@@ -7,7 +7,7 @@ var P_3_2Server;
     btSendJSON.addEventListener("click", sendtoJson);
     let buttonHTML = document.getElementById("sendButton");
     buttonHTML.addEventListener("click", sendtoHTML);
-    let formData = new FormData(document.forms[0]);
+    //let formData: FormData = new FormData(document.forms[0]);
     async function sendtoJson() {
         let formDataJson = new FormData(document.forms[0]); //FormData Objekt wird deklariert & wird auf Formelement verwiesen
         console.log(formDataJson.get("name")); //Holt sich die Zeichenkette mit dem Attribut "name"
@@ -24,8 +24,8 @@ var P_3_2Server;
         console.log("Answer: " + response);
         let answerText = document.getElementById("answer"); //Gibt die Antwort auf der Seite aus
         answerText.innerText = text;
-        let answerJson = await response.json();
-        console.log(answerJson);
+        //let answerJson: JSON = await response.json();
+        console.log(JSON.parse(text));
     }
     async function sendtoHTML() {
         let formDataHTML = new FormData(document.forms[0]);
@@ -35,7 +35,7 @@ var P_3_2Server;
         let response = await fetch(url);
         let answerText = document.getElementById("answer"); //Daten werden asynchron gesendet     
         let text = await response.text();
-        answerText.innerText = text;
+        answerText.innerHTML = text;
     }
 })(P_3_2Server || (P_3_2Server = {}));
 //# sourceMappingURL=script3.2.js.map
