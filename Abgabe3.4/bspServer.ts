@@ -54,7 +54,7 @@ export namespace P_3_4Server {
         console.log("I hear voices!");                                                               //Konsolenausgabe "I hear a voice"                             //Die Eigenschaften des Headers werden deaklariert
         _response.setHeader("Access-Control-Allow-Origin", "*"); 
         _response.setHeader("content-type", "text/html; charset=utf-8");                                    //Zugriffserlaubnis wird festgelegt/überprüft
-        let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);                                                                      //Der Response des Servers wird beendet
+        //let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);                                                                      //Der Response des Servers wird beendet
         
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
@@ -69,11 +69,13 @@ export namespace P_3_4Server {
                 let jsonString: string = JSON.stringify(url.query);
                 _response.write(jsonString);
                 _response.write("Succesfully saved a new Student");
+                console.log("New Student was saved");
             }
             else if(command = "get"){
 
                 let student: Student[] = await getListOfStudents();
                 _response.write(JSON.stringify(student));
+                console.log("Here is your Student");
             }
             else
             console.log("No correct command");  
