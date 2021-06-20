@@ -7,7 +7,7 @@ var P_3_4Server;
     sendData.addEventListener("click", sendDataToDB);
     let getData = document.getElementById("getButton");
     getData.addEventListener("click", getDatafromDB);
-    let data = document.getElementById("document");
+    let dataForm = document.getElementById("document");
     async function sendDataToDB() {
         let formData = new FormData(document.forms[0]);
         console.log(formData.get("name")); //Holt sich die Zeichenkette mit dem Attribut "name"
@@ -24,7 +24,6 @@ var P_3_4Server;
         let text = await response.text();
         answerText.innerHTML = text;
         console.log(text);
-        data.reset();
     }
     async function getDatafromDB() {
         let query = new URLSearchParams();

@@ -6,7 +6,7 @@ namespace P_3_4Server {
     sendData.addEventListener("click", sendDataToDB);
     let getData: HTMLButtonElement = <HTMLButtonElement>document.getElementById("getButton");
     getData.addEventListener("click", getDatafromDB);
-    let data: HTMLFormElement = <HTMLFormElement> document.getElementById("document");
+    let dataForm: HTMLFormElement = <HTMLFormElement> document.getElementById("document");
 
 
     async function sendDataToDB (): Promise <void> {
@@ -25,7 +25,6 @@ namespace P_3_4Server {
         let text: string = await response.text()
         answerText.innerHTML = text;
         console.log(text);
-        data.reset();
     }
     
 

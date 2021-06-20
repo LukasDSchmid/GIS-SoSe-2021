@@ -12,7 +12,7 @@ export namespace P_3_4Server {
     if (!port)                                          //Wen kein Port deklariert wird....
         port = 8100;                                    //...wird dem Port den Wert 8100 zugewiesen
 
-    let dbURL: string = "mongodb+srv://versuchskaninchen:<yeet12345>@zielgerade.zsn9b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    let dbURL: string = "mongodb://localhost:27017";
 
 
     startServer(port);
