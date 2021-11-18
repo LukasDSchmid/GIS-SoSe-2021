@@ -1,0 +1,74 @@
+/* Background */
+
+body{
+    background-image: url(bg.jpg);
+    font-family: sans-serif;
+    width: 800px;
+    text-align:center;
+    margin: auto;
+    justify-content: center;
+}
+
+/* formula */
+
+form{
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+form input{
+    padding: .5em;
+    background: lightgrey;
+    border-radius: 15px;
+    
+}
+
+form textarea{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+}
+
+button{
+    padding: .5em;
+    font-family: sans-serif;
+    background:lightgrey;
+    border-radius: 15px;
+    color: black;
+
+}
+
+::placeholder {
+    color: black;
+    font-size: 1.2em;
+}
+
+#datens{
+    color: gray;
+    font-size: 0.5em;
+}
+
+/*Footer*/
+
+footer{
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: plum;
+    border-radius: 5px;
+}
+
+table thead th {
+    font-weight: 700;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+    cursor: auto;
+    background: #f9fafb;
+    text-align: inherit;
+    color: rgba(0,0,0,.87);
+    padding: .92857143em .78571429em;
+    vertical-align: inherit;
+}
+

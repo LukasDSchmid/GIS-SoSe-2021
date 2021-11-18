@@ -7,9 +7,9 @@
   "name": "lukasschmidapp",
   "description": "Readme Test\r hello",
   "version": "1.0.0",
-  "main": "script3.4.js",
+  "main": "admin.js",
   "scripts": {
-    "start": "node Abgabe3.4/bspServer.js"
+    "start": "node FinaleAbgabe/typescript/server.js"
   },
   "repository": {
     "type": "git",
